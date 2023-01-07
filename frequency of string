@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+char arr[45],n;
+int i,sum = 0,temp,j,r,count  =0,len;
+int str[122] = {0};
+
+
+printf("enter string :");
+scanf("%s",arr);
+
+
+len = strlen(arr);
+
+for(i=0;i<len;i++){
+str[arr[i]]++;
+}
+
+
+for(i=97;i<122;i++){
+if(str[i]>0){
+  printf("%c repeats %d times\n",i,str[i]);
+}
+}
+}
+  

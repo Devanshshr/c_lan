@@ -1,0 +1,38 @@
+#include<stdio.h>
+int main(){
+    int n,i,arr[50],temp,j,in,e,value;
+    printf("enter array length = ");
+    scanf("%d",&n);
+
+     printf("enter arry :\n");
+    for(i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+    printf("youe enter :\n");
+    for(i=0;i<n;i++){
+        printf("%d",arr[i]);
+    }
+printf("entr index mum where you hav eto eneter the element : ");
+scanf(" %d",&in);
+
+printf("enter element : ");
+scanf("%d",&value);
+ 
+
+
+for(i=n-1;i>=(in -1 );i--){
+    arr[i+1] = arr[i];
+}    
+arr[in-1] = value;
+
+
+printf("after insertion is = :\n");
+
+    for(i=0;i<=n;i++){
+        printf("%d ",arr[i]);
+    }
+} 
+   
+
+  
+

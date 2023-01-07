@@ -1,0 +1,35 @@
+#include<stdio.h>
+int main(){
+int arr[89],i,j,n,temp,x;
+printf("enter size of array = ");
+scanf("%d",&n);
+printf("enter array = ");
+for(i=0;i<n;i++){
+scanf("%d",&arr[i]);
+}
+printf("array you enter = ");
+printf("\n**********************************\n");
+for(i=0;i<n;i++){
+    printf("%d\n",arr[i]);
+}
+
+printf("\n**********************************\n");
+printf("how many times you want to revrese = ");
+scanf("%d",&x);
+for(i=0;i<x;i++){
+    temp = arr[0];
+
+    for(j=0;j<n;j++){
+arr[j] = arr[j+1];
+
+
+}
+arr[n-1] = temp;
+}
+
+printf("\n**********************************\n");
+for(i=0;i<n;i++){
+printf("%d\n",arr[i]);
+}
+printf("\n**********************************\n");
+}

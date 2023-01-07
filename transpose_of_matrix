@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main(){
+  int arr[3][3],k[3][3],i,j,m[3][3],sum  =0;
+
+  printf("enter first matrix : \n");
+for(i=0;i<3;i++){
+  for(j=0;j<3;j++){
+    scanf("%d",&arr[i][j]);
+  }
+}
+
+printf("first matrix is : \n");
+for(i=0;i<3;i++){
+  for(j=0;j<3;j++){
+    printf("%d\t",arr[i][j]);
+  }
+  printf("\n");
+}
+
+printf("first matrix is : \n");
+for(i=0;i<3;i++){
+  for(j=0;j<3;j++){
+k[j][i] = arr[i][j];
+  }
+  }
+
+printf("first matrix is : \n");
+for(i=0;i<3;i++){
+  for(j=0;j<3;j++){
+    printf("%d\t",k[i][j]);
+  }
+  printf("\n");
+}
+}
+
+
